@@ -13,3 +13,5 @@ const NameTagList: React.FC<NameTagListProps> = ({ nametags }) => {
         </div>
     );
 };
+
+export default NameTagList;
