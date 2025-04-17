@@ -38,24 +38,28 @@ const Home: React.FC = () => {
             <h1>Name Tag Generator</h1>
             <form onSubmit={handleAddNameTag}>
                 <input
+                    className={styles.input}
                     type="text"
                     value={name}
                     onChange={ (e) => setName(e.target.value)}
                     placeholder="Enter Name"
                 />
                 <input
+                    className={styles.input}
                     type="text"
                     value={role}
                     onChange={(e) => setRole(e.target.value)}
                     placeholder="Enter Role"
                 />
                 <input
+                    className={styles.input}
                     type="text"
                     value={host}
                     onChange={(e) => setHost(e.target.value)}
                     placeholder="Enter Host"
                 />
                 <input
+                    className={styles.input}
                     type="file"
                     onChange={(e) => {
                         if (e.target.files && e.target.files[0]) {
